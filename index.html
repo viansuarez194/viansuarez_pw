@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>PERSONAL WEBSITE</title> <!--ito ay title or name nung tab-->
+</head>
+
+    <header style ="text-align: center; background-color: black;"> <!--ito ay ginagamit para sa header part ng website, may style din for style mismo nung header-->
+    <a href="index.html" class="btn">|HOME PAGE  |</a> <!--text button para sa home page-->
+    <a href="about.html" class="btn">|ABOUT PAGE | </a> <!--text button para sa about page-->
+    <a href="gallery.html" class="btn">|GALLERY PAGE|</a> <!--text button para sa gallery page-->
+
+    </header>
+    <style> /* para ito sa design ng laman ng html, ginagamitan ng css*/
+body { 
+  background-image: url('home.jpg'); /* para ito sa design body, so nag lagay ng background image at yung size is cover para mag fit sa screen*/
+  background-size: cover;
+}
+
+.btn{ /* para sa button placement and design*/
+    display: inline-block;
+    margin-right: 12px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.name{ /* para sa design ng name sa frontpage*/
+    font-size: clamp(50px, 10vw, 120px);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.name:hover{ /* yung hover is once na tumama yung cursor sa text ay mag papalit ang kulay nya into orange*/
+    color: rgb(255, 98, 0);
+    transition: 0.3s;
+    
+}
+h1{
+    font-size: clamp(25px, 5vw, 60px); /* size ng header para maging responsive*/
+}
+</style>
+    
+<body>
+
+    <h1 style = "text-align: center; font-family: Times New Roman; font-size: 70px; color: antiquewhite;">HOME PAGE</h1> <!--header para sa homepage-->
+    <h1 class="name"> VIAN CYRUZ SUAREZ</h1> <!--ito yung text na malaki sa front page or home page-->
+    <p style = "color: aliceblue; font-size:xx-large; text-align: center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">Hello, this is Vian Cyruz Suarez. 19 years old. I am from San Pablo City Laguna, and welcome to my personal website.  Here, you will learn more about who I am, what I enjoy doing, and the things that inspires me. Thankyou for visiting, and I hope you enjoy exploring my website!</p>
+   
+
+    
+</body>
+</html>

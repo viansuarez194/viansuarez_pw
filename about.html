@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>PERSONAL WEBSITE</title> <!--ito ay title or name nung tab-->
+</head>
+
+    <header style ="text-align: center; background-color: black;"> <!--ito ay ginagamit para sa header part ng website, may style din for style mismo nung header-->
+     <a href="index.html" class="btn">|HOME PAGE  |</a> <!--text button para sa home page-->
+    <a href="about.html" class="btn">|ABOUT PAGE | </a> <!--text button para sa about page-->
+    <a href="gallery.html" class="btn">|GALLERY PAGE|</a> <!--text button para sa gallery page-->
+
+    </header>
+    <style> /* para ito sa design ng laman ng html, ginagamitan ng css*/
+body {
+  background-image: url('home.jpg'); /* para ito sa design body, so nag lagay ng background image at yung size is cover para mag fit sa screen*/
+   background-size: cover;
+}
+
+.btn{ /* para sa button placement and design*/
+    display: inline-block;
+    margin-right: 12px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: clamp(25px, 5vw, 60px); /* size ng header para maging responsive*/
+}
+
+</style>
+    
+<body>
+    <h1 style ="text-align: center; font-size: 70px; color: antiquewhite;">
+        ABOUT PAGE
+    </h1> <!--header para sa homepage-->
+    <p style = "color: aliceblue; font-size:xx-large; text-align: center;"> I am vian Suarez, 19 years old, I am from San Pablo City Laguna, currently taking Bachelor of Science in Information Technology at Laguna State Polythecnic University. I am a student who is passionate about learning technology and improving my skills in web development. I enjoy exploring websites, because in it, I gain more knowledge about how they are built, and how technologies work together to create interactive expiriences.</p>
+    <!--maikling paragraph para sa home page-->
+    
+    <h3 style="text-align: center; font-size: 30px; color: white;">MY INTEREST:</h3> <!--pamagat para ron sa list which is my interest yung nakalagay-->
+    <ul style=" font-size: 30px; color: white;"> <!--lito yung list na naka bullets, yung 5 na list sa baba is ayon yung mapupunta ron-->
+        <li>Exploring New Technologies</li>
+        <li>Listening To Musics</li>
+        <li>Watching Movies</li>
+        <li>Nature Trips</li>
+        <li>Spending Time With My Family and Friends</li>
+    </ul>
+
+    <h3 style="text-align: center; font-size: 30px; color: white;">MY SKILLS:</h3> <!--pamagat para ron sa list which is my skills yung nakalagay-->
+    <ul style=" font-size: 30px; color: white;"> <!--lito yung list na naka bullets, yung 5 na list sa baba is ayon yung mapupunta ron-->
+        <li>Basic HTML and CSS</li>
+        <li>Problem Solving Skills</li>
+        <li>Creativity in Sharing Different Ideas</li>
+
+    </ul> 
+</body>
+</html> <!--end ng code->

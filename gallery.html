@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>PERSONAL WEBSITE</title> <!--ito ay title or name nung tab-->
+</head>
+
+    <header style ="text-align: center; background-color: black;"><!--ito ay ginagamit para sa header part ng website, may style din for style mismo nung header-->
+    <a href="index.html" class="btn">|HOME PAGE  |</a> <!--text button para sa home page-->
+    <a href="about.html" class="btn">|ABOUT PAGE | </a> <!--text button para sa about page-->
+    <a href="gallery.html" class="btn">|GALLERY PAGE|</a> <!--text button para sa gallery page-->
+
+    </header>
+    <style>
+body {
+  background-image: url('home.jpg'); /* para ito sa design body, so nag lagay ng background image at yung size is cover para mag fit sa screen*/
+   background-size: cover;
+}
+.btn{ /* para sa button placement and design*/
+    display: inline-block;
+    margin-right: 12px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: clamp(25px, 5vw, 60px); /* size ng header para maging responsive*/
+}
+.gallery{ /* dito yung design para sa mga images*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* auto fit sya para ron sa size na ilalagay na images*/
+    gap: 15px;
+    padding: 20px;
+}
+.gallery-item img{ /* size nung mga images*/
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* border ng image*/
+    transition: transform 0.3s;
+}
+.gallery-item img:hover{
+    transform: scale(1.05); /* pag tumapat yung cursor sa image ay mag hhover sya na parang zoom but konti lang since 1.05 lang*/
+}
+</style>
+    
+<body>
+
+    <h1 style = "text-align: center; font-family: Times New Roman; font-size: 70px; color: antiquewhite;">GALLERY PAGE</h1> <!--header para sa gallery page-->
+
+    <section class ="gallery">
+        <div class ="gallery-item"><img src ="gal1.jpg"></div> <!--image 1-->
+        <div class ="gallery-item"><img src ="gal2.jpg"></div> <!--image 2-->
+        <div class ="gallery-item"><img src ="gal3.jpg"></div> <!--image 3-->
+        <div class ="gallery-item"><img src ="gal4.jpg"></div> <!--image 4-->
+
+    </section>
+
+    
+</body>
+</html>
